@@ -1,9 +1,5 @@
 # ThreeJs learning
 
-
-
-
-
 ThreeJs can able to render 3d object easily, user can interact with the object as well
 
 - Lighting
@@ -15,12 +11,14 @@ ThreeJs can able to render 3d object easily, user can interact with the object a
 
 
 
-Install the dependencies and devDependencies and start the website.
+No bundler, no modules, no dependencies and start the website.
 [](https://nodejs.org/)
 ```sh
-npm i
 ```
-
+## Note for part 3
+- An object need material and size
+- can have multiple and switch camera
+-
 
 ## Process
 
