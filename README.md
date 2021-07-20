@@ -26,9 +26,13 @@ npm i
 
 
 
-| Part | Process |
+| Level | Process |
 | ------ | ------ |
-| part1 | 🚧 |
+| Basics | 🚧 |
+| Classic techniques | |
+| Advanced techniques | |
+| Shaders | |
+| Extra | |
 
 ## License
 
