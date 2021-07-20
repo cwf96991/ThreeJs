@@ -18,7 +18,6 @@ No bundler, no modules, no dependencies and start the website.
 ## Note for basic
 - An object need material and size
 - can have multiple and switch camera
--
 
 ## Process
 
