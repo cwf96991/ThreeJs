@@ -18,6 +18,10 @@ No bundler, no modules, no dependencies and start the website.
 ## Note for basic
 - An object need material and size
 - can have multiple and switch camera
+- you can set position, scale by 3d vector
+- rotate object my 2 methods (rotate, )
+- becareful for the rotate order
+- you can reorder the rotation order
 
 ## Process
 
