@@ -7,14 +7,22 @@ ThreeJs can able to render 3d object easily, user can interact with the object a
 - ✨Model✨
 
 
-## Installation
+## Setup
+Naviagte to corresponding folder
+Download [Node.js](https://nodejs.org/en/download/).
+Run this followed commands:
 
+``` bash
+# Install dependencies (only the first time)
+npm install
 
+# Run the local server at localhost:8080
+npm run dev
 
-No bundler, no modules, no dependencies and start the website.
-[](https://nodejs.org/)
-```sh
+# Build for production in the dist/ directory
+npm run build
 ```
+
 ## Note for basic
 - An object need material and size
 - can have multiple and switch camera
