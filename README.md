@@ -23,14 +23,14 @@ npm run dev
 npm run build
 ```
 
-## Note for basic
-- An object need material and size
-- can have multiple and switch camera
-- you can set position, scale by 3d vector
-- rotate object my 2 methods (rotate, )
-- becareful for the rotate order
-- you can reorder the rotation order
--
+
+
+## Textures Ref
+- [3dtextures.me](https://3dtextures.me)
+- [poliigon.com](https://www.poliigon.com/)
+- [arroway-textures.ch](https://www.arroway-textures.ch/)
+- [substance designer tutorial](https://www.youtube.com/playlist?list=PLB0wXHrWAmCwWfVVurGIQO_tMVWCFhnqE)
+
 ## Process
 
 
