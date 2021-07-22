@@ -26,7 +26,13 @@ npm run build
 ## Note for Material
 - normals can be use for lighting, reflection, refraction 
 - if you want to use MeshToonMaterial need set minFilter and magFilter to THREE.NearestFilter and set material.gradientMap to  texture
-## Textures Ref
+
+## Note for Particle 
+- use depthTest = false to hide the edge but some bug will occur when there are some others object in the same scene
+- set depthWrite = false to solve the problem mentioned above
+- set blending = THREE.AdditiveBlending to add the color of the pixel to the color of the pixel already drawn
+- set attribute needsUpdate = true to update the attribute 
+## Useful Resource Ref
 - [3dtextures.me](https://3dtextures.me)
 - [poliigon.com](https://www.poliigon.com/)
 - [arroway-textures.ch](https://www.arroway-textures.ch/)
@@ -35,6 +41,7 @@ npm run build
 － [matcaps](https://github.com/nidorx/matcaps)
 - [HDRI to CubeMap](https://matheowis.github.io/HDRI-to-CubeMap/)
 - Cubmap View --> upload HDRI -->the asset in one row 
+- [particle](https://www.kenney.nl/assets/particle-pack)
 ## Process
 
 
