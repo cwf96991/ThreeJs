@@ -23,22 +23,26 @@ npm run dev
 npm run build
 ```
 
-
-
+## Note for Material
+- normals can be use for lighting, reflection, refraction 
+- if you want to use MeshToonMaterial need set minFilter and magFilter to THREE.NearestFilter and set material.gradientMap to  texture
 ## Textures Ref
 - [3dtextures.me](https://3dtextures.me)
 - [poliigon.com](https://www.poliigon.com/)
 - [arroway-textures.ch](https://www.arroway-textures.ch/)
 - [substance designer tutorial](https://www.youtube.com/playlist?list=PLB0wXHrWAmCwWfVVurGIQO_tMVWCFhnqE)
-
+- [environment Map](https://polyhaven.com/)
+－ [matcaps](https://github.com/nidorx/matcaps)
+- [HDRI to CubeMap](https://matheowis.github.io/HDRI-to-CubeMap/)
+- Cubmap View --> upload HDRI -->the asset in one row 
 ## Process
 
 
 
 | Level | Process |
 | ------ | ------ |
-| Basics | 🚧 |
-| Classic techniques | |
+| Basics | ✅ |
+| Classic techniques | 🚧 |
 | Advanced techniques | |
 | Shaders | |
 | Extra | |
