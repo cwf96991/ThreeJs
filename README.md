@@ -26,7 +26,27 @@ npm run build
 ## Note for Material
 - normals can be use for lighting, reflection, refraction 
 - if you want to use MeshToonMaterial need set minFilter and magFilter to THREE.NearestFilter and set material.gradientMap to  texture
-## Textures Ref
+
+## Note for Particle 
+- use depthTest = false to hide the edge but some bug will occur when there are some others object in the same scene
+- set depthWrite = false to solve the problem mentioned above
+- set blending = THREE.AdditiveBlending to add the color of the pixel to the color of the pixel already drawn
+- set attribute needsUpdate = true to update the attribute 
+
+## Note for random location
+-  imagine there you want to generate a bunch of object inside a area
+-  using angle = Math.random() * Math.PI * 2 to get the random angle
+-  x position can be Math.cos(angle) * radius and z can be Math.sin(angle) * radius
+-  in gerenal you can use Math.random() - 0.5 to get a random number within the range -0.5 to 0.5
+-  using the multiper to enlarge the range
+
+## Note for ambience
+-  scene.fog = new THREE.Fog('#262837', 1, 15)
+-  can create foggy environment
+
+## Note for physics 
+-  ammo.js vs [cannon.js](http://schteppe.github.io/cannon.js/docs/classes/Vec3.html)
+## Useful Resource Ref
 - [3dtextures.me](https://3dtextures.me)
 - [poliigon.com](https://www.poliigon.com/)
 - [arroway-textures.ch](https://www.arroway-textures.ch/)
@@ -35,6 +55,7 @@ npm run build
 － [matcaps](https://github.com/nidorx/matcaps)
 - [HDRI to CubeMap](https://matheowis.github.io/HDRI-to-CubeMap/)
 - Cubmap View --> upload HDRI -->the asset in one row 
+- [particle](https://www.kenney.nl/assets/particle-pack)
 ## Process
 
 
@@ -42,8 +63,8 @@ npm run build
 | Level | Process |
 | ------ | ------ |
 | Basics | ✅ |
-| Classic techniques | 🚧 |
-| Advanced techniques | |
+| Classic techniques | ✅  |
+| Advanced techniques | 🚧  |
 | Shaders | |
 | Extra | |
 
