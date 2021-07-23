@@ -47,15 +47,17 @@ const concretePlasticContactMaterial = new CANNON.ContactMaterial(
     {
         friction: 0.1,
         restitution: 0.7
+        //for bouncing
     }
 )
-
+world.addContactMaterial(concretePlasticContactMaterial)
 //Sphere
 const sphereShape = new CANNON.Sphere(0.5);
 const sphereBody = new CANNON.Body({
   mass: 1,
   position: new CANNON.Vec3(0, 3, 0),
   shape: sphereShape,
+  material:plasticMaterial
 });
 world.addBody(sphereBody);
 /**
