@@ -46,6 +46,7 @@ npm run build
 
 ## Note for physics 
 -  ammo.js vs [cannon.js](http://schteppe.github.io/cannon.js/docs/classes/Vec3.html)
+-  one body can contain multiple shape
 ## Useful Resource Ref
 - [3dtextures.me](https://3dtextures.me)
 - [poliigon.com](https://www.poliigon.com/)
