@@ -47,6 +47,12 @@ npm run build
 ## Note for physics 
 -  ammo.js vs [cannon.js](http://schteppe.github.io/cannon.js/docs/classes/Vec3.html)
 -  one body can contain multiple shape
+-  physics body can counting the with from center, so width/2 etc.
+-  need update the quaternion for rotation
+-  allowSleep = true, broadphase = new CANNON.SAPBroadphase(world) can improve the preformance
+
+## Note for Object/Model
+-  draco is using for compression, and it may much lighter
 ## Useful Resource Ref
 - [3dtextures.me](https://3dtextures.me)
 - [poliigon.com](https://www.poliigon.com/)
@@ -66,7 +72,7 @@ npm run build
 | Basics | ✅ |
 | Classic techniques | ✅  |
 | Advanced techniques | 🚧  |
-| Shaders | |
+| Shaders(24) | |
 | Extra | |
 
 ## License
