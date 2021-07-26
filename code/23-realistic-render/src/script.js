@@ -75,7 +75,22 @@ gui.add(debugObject, 'envMapIntensity').min(0).max(10).step(0.001).onChange(upda
         updateAllMaterials()
     }
 )
-
+/**
+ * Lights
+ */
+ const directionalLight = new THREE.DirectionalLight('#ffffff', 3)
+ directionalLight.castShadow = true
+ directionalLight.shadow.camera.far = 15
+ directionalLight.shadow.mapSize.set(1024, 1024)
+ directionalLight.shadow.normalBias = 0.05
+ directionalLight.position.set(0.25, 3, - 2.25)
+ scene.add(directionalLight)
+ 
+ gui.add(directionalLight, 'intensity').min(0).max(10).step(0.001).name('lightIntensity')
+ gui.add(directionalLight.position, 'x').min(- 5).max(5).step(0.001).name('lightX')
+ gui.add(directionalLight.position, 'y').min(- 5).max(5).step(0.001).name('lightY')
+ gui.add(directionalLight.position, 'z').min(- 5).max(5).step(0.001).name('lightZ')
+ 
 /**
  * Sizes
  */
@@ -115,13 +130,32 @@ controls.enableDamping = true
  * Renderer
  */
 const renderer = new THREE.WebGLRenderer({
-    canvas: canvas
+    canvas: canvas,
+    antialias: true
 })
+renderer.physicallyCorrectLights = true
+renderer.outputEncoding = THREE.sRGBEncoding
+renderer.toneMapping = THREE.ReinhardToneMapping
+renderer.toneMappingExposure = 3
 renderer.shadowMap.enabled = true
 renderer.shadowMap.type = THREE.PCFSoftShadowMap
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
+gui
+    .add(renderer, 'toneMapping', {
+        No: THREE.NoToneMapping,
+        Linear: THREE.LinearToneMapping,
+        Reinhard: THREE.ReinhardToneMapping,
+        Cineon: THREE.CineonToneMapping,
+        ACESFilmic: THREE.ACESFilmicToneMapping
+    })
+    .onFinishChange(() =>
+    {
+        renderer.toneMapping = Number(renderer.toneMapping)
+        updateAllMaterials()
+    })
+    gui.add(renderer, 'toneMappingExposure').min(0).max(10).step(0.001)
 /**
  * Animate
  */
