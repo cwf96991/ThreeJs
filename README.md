@@ -54,6 +54,9 @@ npm run build
 ## Note for Object/Model
 -  draco is using for compression, and it may much lighter
 -  directionalLight.shadow.normalBias=0.05 to reduce the shadow map effect
+
+## Note for Shader
+- w for after z which is the forth axis
 ## Useful Resource Ref
 - [3dtextures.me](https://3dtextures.me)
 - [poliigon.com](https://www.poliigon.com/)
