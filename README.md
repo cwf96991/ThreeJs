@@ -54,6 +54,12 @@ npm run build
 ## Note for Object/Model
 -  draco is using for compression, and it may much lighter
 -  directionalLight.shadow.normalBias=0.05 to reduce the shadow map effect
+
+## Note for Shader
+-  w for after z which is the forth axis
+-  only vertex can retrieve the attribute
+-  vertex can send data to fragment via varying
+-  In .glsl float datatype must with a ?.0
 ## Useful Resource Ref
 - [3dtextures.me](https://3dtextures.me)
 - [poliigon.com](https://www.poliigon.com/)
@@ -64,6 +70,9 @@ npm run build
 - [HDRI to CubeMap](https://matheowis.github.io/HDRI-to-CubeMap/)
 - Cubmap View --> upload HDRI -->the asset in one row 
 - [particle](https://www.kenney.nl/assets/particle-pack)
+-  [The Book of Shaders](https://thebookofshaders.com/)
+-  [ShaderToy](https://www.shadertoy.com/)
+-  [Shaders series -Lewis Lepton](https://www.youtube.com/watch?v=HIvNePu7UEE&list=PL4neAtv21WOmIrTrkNO3xCyrxg4LKkrF7&ab_channel=LewisLepton)
 ## Process
 
 
