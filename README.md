@@ -82,8 +82,8 @@ npm run build
 | Basics | ✅ |
 | Classic techniques | ✅  |
 | Advanced techniques | ✅  |
-| Shaders | 🚧  |
-| Extra | |
+| Shaders | ✅  |
+| Extra | 🚧 |
 
 ## License
 
